@@ -51,5 +51,6 @@ referencesを指定したことで、
 
 
 ### 参考
+https://qiita.com/krile136/items/0e824a6fb1d657bd3f97
 https://prograshi.com/framework/rails/references_and_foreign-key/
 https://railsguides.jp/association_basics.html
