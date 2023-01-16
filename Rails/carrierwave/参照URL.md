@@ -1,0 +1,4 @@
+
+https://qiita.com/kidokoro-syusei/items/4f966c48b6f1cba4c57d
+https://qiita.com/oden-09/items/5b494ff9abe7f2734b3e
+https://github.com/carrierwaveuploader/carrierwave/blob/master/README.md

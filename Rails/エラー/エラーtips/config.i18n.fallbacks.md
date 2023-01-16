@@ -7,22 +7,22 @@ RAILSGUIDS / Railアプリを設定する/3 Railsコンポーネントを構成�
 
 ## 1.　defaultのlocaleをfallback先として使う場合、trueを設定。
 
-/config/environments/production.rb
-```
+```ruby
+#/config/environments/production.rb
 config.i18n.fallbacks = true
 ```
 
 ## 2.　localeの配列をfallback先に使う場合。
 
-/config/environments/production.rb
-```
+```ruby
+#/config/environments/production.rb
 config.i18n.fallbacks = [:tr, :en]
 ```
 
 ## 3.　localeごとに個別のfallbackを設定する場合。 例:azと:deに:trを、:daに:enをそれぞれfallback先として指定する場合は、次のようにします。
 
-/config/environments/production.rb
-```
+```ruby
+#/config/environments/production.rb
 config.i18n.fallbacks = { az: :tr, da: [:de, :en] }
 #or
 config.i18n.fallbacks.map = { az: :tr, da: [:de, :en] }
