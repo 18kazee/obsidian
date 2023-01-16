@@ -4,7 +4,7 @@
 親となるモデルに記載。
 
 ```ruby
-has_many :モデル名(単数系)
+has_many :モデル名(複数形)
 ```
 
 [[references]]を使えば、[[belongs_to]]は自動で記述されるが、
@@ -15,3 +15,4 @@ has_many :モデル名(単数系)
 
 ### 参考
 https://railsguides.jp/association_basics.html
+https://meo2.hatenablog.com/entry/2021/06/01/033407
