@@ -1,2 +1,2 @@
 
-https://proengineer.internous.co.jp/content/columnfeature/6969
+https://www.r-staffing.co.jp/engineer/entry/20191129_1
