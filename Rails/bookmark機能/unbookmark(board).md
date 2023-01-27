@@ -1,0 +1,2 @@
+
+`bookmarks_boards`からboardの引数に入っている掲示板idが入ったレコードを探し出して削除（delete)するメソッド。
