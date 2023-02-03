@@ -87,11 +87,15 @@ $("#error_messages").remove()
 	$("#js-new-comment-body").val('')
 <% end %>
 ```
+>説明
+[[create.js.erb]]
+
 
 ```ruby
 # destroy.js.erb
 $("tr#comment-<%= @comment.id %>").remove()
 ```
+
 
 ---
 >参照
