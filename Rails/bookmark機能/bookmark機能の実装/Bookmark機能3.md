@@ -42,7 +42,7 @@
 <% if current_user.own?(board) %> 
 	<%= render 'crud_menus', board: board %>
 <% else %> 
-	<%= render 'bookmarks/bookmark_area', board: board %> 
+	<%= render 'bookmarks/bookmark_button', board: board %> 
 <% end %>
 ```
 
