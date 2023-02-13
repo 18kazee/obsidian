@@ -43,6 +43,12 @@ paginateヘルパーを使用
 <%= paginate @boards %>
 ```
 
+
+##### 注意
+kaminariではページ数が1の場合はページネーションが表示されません。
+`config.default_per_page = 20` と設定されているので、21個以上作成するか、 `default_per_page` を少ない値に変更してみて、もう１度確認。  
+
+
 ## ページネーションにbootstrapを適用
 
 ### bootstrap4-kaminari-views
@@ -60,6 +66,7 @@ $ bundle install
 ```ruby
 <%= paginate @boards, theme: 'twitter-bootstrap-4' %>
 ```
+
 
 ----
 >参照
