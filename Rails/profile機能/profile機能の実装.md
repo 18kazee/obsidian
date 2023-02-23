@@ -38,6 +38,9 @@ class ProfileController << ApplicationController
 	end
 ```
 
+set_userについて参照すること <<  [[set_user]]
+
+
 ## avatar uploaderの作成
 
 ### avatarカラムの作成(userに紐付け)

@@ -1,6 +1,6 @@
 
 ```Gemfile
-gem carrierwave
+gem 'carrierwave'
 ```
 
 ```shell
