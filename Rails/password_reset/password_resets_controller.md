@@ -117,4 +117,3 @@ end
 
 >参照
 >https://github.com/Sorcery/sorcery/blob/6fdc703416b3ff8d05708b05d5a8228ab39032a5/lib/sorcery/model/submodules/reset_password.rb#L126
-

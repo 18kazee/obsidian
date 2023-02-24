@@ -246,7 +246,6 @@ tokenは一意なものでなければいけませんので、`uniqueness: true`
 			<h1><%= t('.title') %>
 			<%= form_with model: @user, url: password_reset_path(@token), local: true do |f| %>
 				<%= render 'shared/error_messages', object: f.object %>
-
 				<div class="form-group">
 					<%= f.label :email %>
 					<%= @user.email%>
@@ -284,3 +283,81 @@ tokenは一意なものでなければいけませんので、`uniqueness: true`
     </div>
   </div>
 ```
+
+## letter_opener_webを追加
+
+`letter_opener_web` を使って開発環境では実際のメールは送られないように設定
+
+### Gemfileにletter_opener_webを追加する
+
+```ruby
+# Gemfile
+group :development do
+  gem 'letter_opener_web', '~> 1.0'
+end
+```
+
+```shell
+$ bundle install
+```
+
+### ルーティングに追記
+
+LetterOpenerWebにアクセスするために必要な記述を追記
+
+```ruby
+mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
+```
+
+```ruby
+config.action_mailer.delivery_method = :letter_opener_web
+config.action_mailer.default_url_options = { host: 'localhost:3000' }
+```
+
+## configの追加
+
+```ruby
+#Gemfile
+gem 'config'
+```
+
+```shell
+$ bundle install
+```
+
+```shell
+$ bin/rails g config:install
+```
+
+host情報を`settings/development.yml`に記載
+```ruby
+#config/settings/deveropment.yml
+default_url_options:
+  host: 'localhost:3000'
+```
+
+```ruby
+#config/enviropments/development.rb
+config.action_mailer.perform_caching = false
+config.action_mailer.default_url_options = Settings.default_url_options.to_h
+config.action_mailer.delivery_method = :letter_opener_web
+```
+
+本番環境では以下のようにします。`host: 'example.com'`の部分には自分のドメインを設定します。
+```ruby
+#config/settings/production.yml
+default_url_options:
+  protcol: 'https'
+  host: 'example.com'
+```
+
+```ruby
+#config/enviropments/production.rb
+config.action_mailer.default_url_options = Settings.default_url_options.to_h
+```
+
+>参照
+[[Gem config]]
+
+----
+https://osamudaira.com/247/#toc3
