@@ -195,3 +195,9 @@ admin/shared/_sidebar.html.erb
 
 [[admin機能のサイドバーをアクティブに]]
 
+
+----
+参考
+https://study-diary.hatenadiary.jp/entry/2020/09/05/190836
+https://qiita.com/mmaumtjgj/items/34117cd07e9b7aa72585
+https://yoshi14m3185.hatenablog.com/entry/2020/09/06/160312
