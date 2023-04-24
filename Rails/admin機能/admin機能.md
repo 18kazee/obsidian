@@ -36,7 +36,6 @@ $ yarn add admin-lte@^3.1
 
 //= require admin-lte/plugins/bootstrap/js/bootstrap.bundle.min       # 拡張子は省略可能
 //= require admin-lte/dist/js/adminlte.min
-//= require common.js
 ```
 -   `//= require rails_ujs` だと現在はエラ－が起こるようで、`//= require jquery_ujs` を記述する必要がある。
 参考：[](https://qiita.com/Statham/items/372234e23749ff1f6bf8)[https://qiita.com/Statham/items/372234e23749ff1f6bf8](https://qiita.com/Statham/items/372234e23749ff1f6bf8)
@@ -64,8 +63,6 @@ $ yarn add admin-lte@^3.1
 
 //= require rails-ujs
 //= require activestorage
-//= require common.js
-//= require cable.js
 ```
 
 不要なファイルを読み込むのを避けるために、`//= require_tree .` は使わず、必要なファイルを適切な順番で個別に記述する。
@@ -89,7 +86,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
-Rails.application.config.assets.precompile += %w[admin.js admin.css]
+Rails.application.config.assets.precompile += %w( admin.js admin.css )
 ```
 
 プリコンパイルの設定をします。application以外のマニフェストファイルを個別に読み込む場合は、プリコンパイルの設定をしないと、そのファイルは対象外とされてしまうためエラーが起きてしまう。
@@ -430,7 +427,7 @@ end
 
 ### 管理者ログイン画面のビューファイルを作成
 
-`views/admin/layouts/` 配下に`admin_login.html.erb`という名前で作成
+`views/layouts/` 配下に`admin_login.html.erb`という名前で作成
 
 ```ruby
 <!DOCTYPE html>
