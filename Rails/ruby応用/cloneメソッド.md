@@ -6,7 +6,7 @@
 また得意メソッド(classメソッド)がある場合でもdupメソッドではコピーできません。
 これらはcloneメソッドであればコピー可能です。
 
-```
+```ruby
 class Train
 	attr_accessor :name
 
