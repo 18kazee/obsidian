@@ -175,8 +175,8 @@ end
 
 このコードを`association`を使って記述するとき、`let`の部分は`let(:task) { create(:task)}`と書けば済むが、
 
-**`visit project_task_path(project, task)`**の引数をこのままでは、  
-`第１引数にtaskと結びついていないproject_idを呼び出す事になってしまう`。
+`visit project_task_path(project, task)`の引数をこのままでは、  
+第１引数にtaskと結びついていないproject_idを呼び出す事になってしまう。
 
 第２引数の`task`に紐づくよう、第1引数は`task.project`にしなければならない。
 

@@ -1,7 +1,7 @@
 
-![[Pasted image 20230424114648.png]]
+[![Image from Gyazo](https://i.gyazo.com/5812e7ab7a6a2997142829a29d99a90d.png)](https://gyazo.com/5812e7ab7a6a2997142829a29d99a90d)
 
-![[Pasted image 20230424114834.png]]
+[![Image from Gyazo](https://i.gyazo.com/2396422af4f0ddd6fb61bc7ec012a1b1.png)](https://gyazo.com/2396422af4f0ddd6fb61bc7ec012a1b1)
 
 
 画像を投稿するページで、画像未選択のままプレビュー画面を開くとエラーになりました。
