@@ -102,3 +102,4 @@ attr_accessor: 変数名　参照・更新の両方を可能にする。（「�
 
 
 https://qiita.com/k-penguin-sato/items/5b75be386be4c55e3abf
+https://okmt-aya-26.hatenablog.com/entry/2022/05/16/133544
