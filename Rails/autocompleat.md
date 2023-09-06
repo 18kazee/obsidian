@@ -1,0 +1,4 @@
+
+```
+rails g  stiumlus search
+```
